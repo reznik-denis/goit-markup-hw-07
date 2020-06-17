@@ -1,0 +1,28 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.bacground-color-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-color: $bacground-second-color;
+  border-radius: 4px;
+}
+
+.icon-advantages {
+  display: block;
+}
+
+.advantages .item:nth-child(4n) {
+  margin-right: 0;
+}

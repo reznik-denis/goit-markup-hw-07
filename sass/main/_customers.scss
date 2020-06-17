@@ -1,0 +1,39 @@
+.customers {
+  display: flex;
+}
+
+.customers .item {
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
+
+  border: 1px solid $border-customers-color;
+  border-radius: 4px;
+  color: $border-customers-color;
+  cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers .item:hover,
+.customers .item:focus {
+  border-color: $accent-color;
+  color: $accent-color;
+}
+
+.customers .item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.bacground-customers {
+  color: inherit;
+}
+
+.icon-customers {
+  display: block;
+  fill: currentColor;
+}
