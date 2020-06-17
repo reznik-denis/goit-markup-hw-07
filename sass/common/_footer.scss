@@ -1,0 +1,16 @@
+.footer {
+  background-color: $footer-bacground-color;
+}
+
+.copirait {
+  padding: 18px 0 21px 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $footer-second-text-color;
+  background-color: $footer-bacground-color;
+  border-top: 1px solid $border-footer-solid;
+}
