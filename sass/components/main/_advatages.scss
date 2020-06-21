@@ -1,11 +1,13 @@
 .advantages {
   display: flex;
   flex-wrap: wrap;
-}
-
-.advantages .item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .bacground-color-icon {
@@ -21,8 +23,4 @@
 
 .icon-advantages {
   display: block;
-}
-
-.advantages .item:nth-child(4n) {
-  margin-right: 0;
 }
