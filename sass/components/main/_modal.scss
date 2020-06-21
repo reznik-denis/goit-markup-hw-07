@@ -7,21 +7,19 @@
 
   background-color: $backdrop-color;
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop .modal {
-  transform: scale(1) translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms $time-function;
+  .modal {
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms $time-function;
+  }
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-
-.is-hidden .modal {
-  transform: scale(0) translate(-50%, -50%);
+  .modal {
+    transform: scale(0) translate(-50%, -50%);
+  }
 }
 
 .modal {
@@ -50,22 +48,20 @@
   border: none;
   color: inherit;
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms $time-function,
+    color 250ms $time-function,
+    background-color 250ms $time-function;
 
   background-color: $primary-white-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.close-modal:hover,
-.close-modal:focus {
-  transform: scale(1.1);
-  cursor: pointer;
-  background-color: $accent-color;
-  fill: $primary-white-color;
-  outline: none;
+  &:hover, &:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: $accent-color;
+    fill: $primary-white-color;
+    outline: none;
+  }
 }
 
 .modal-header {
@@ -93,7 +89,8 @@
 }
 
 .policy {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
@@ -111,24 +108,18 @@
   color: $accent-color;
 }
 
-.checkbox input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0px;
-  padding: 0px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .checkbox {
   margin-bottom: 30px;
-}
-
-.policy {
-  display: flex;
-  align-items: center;
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .icon-checkbox {
@@ -142,15 +133,14 @@
   border-radius: 2px;
   background-color: inherit;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox input:checked + .icon-checkbox {
-  border-color: transparent;
-  background-color: $accent-color;
-  background-image: url('../images/icon-check.svg');
-  background-size: contain;
-  background-origin: border-box;
+  transition: background-color 250ms $time-function;
+  .checkbox input:checked + & {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-image: url('../images/icon-check.svg');
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .form-coment {

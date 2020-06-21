@@ -55,7 +55,7 @@
   background-color: $border-footer-solid;
   border-radius: 22px;
 
-  transition: background-color 250ms $time-functiion;
+  transition: background-color 250ms $time-function;
   &:hover, &:focus {
     background-color: $accent-color;
   }
