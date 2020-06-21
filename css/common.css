@@ -55,8 +55,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover, .logo:focus {
   color: #2196f3;
 }
 
@@ -66,8 +65,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-accent:hover,
-.logo-accent:focus {
+.logo-accent:hover, .logo-accent:focus {
   color: #212121;
 }
 
@@ -100,16 +98,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-.position {
-  position: relative;
-}
-
-.contacts-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .site-nav .link {
   display: block;
   padding: 32px 0px;
@@ -118,13 +106,22 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.site-nav .link:hover, .site-nav .link:focus {
+  color: #2196f3;
+}
+
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
+.position {
+  position: relative;
+}
+
+.contacts-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .site-nav .link.current {
@@ -144,8 +141,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link.current:hover,
-.site-nav .link.current:focus {
+.site-nav .link.current:hover, .site-nav .link.current:focus {
   color: #212121;
 }
 
@@ -163,6 +159,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.site-nav .contacts-main .link-contact:hover, .site-nav .contacts-main .link-contact:focus {
+  color: #2196f3;
+}
+
 .site-contacts {
   margin-left: auto;
 }
@@ -171,15 +171,14 @@ img {
   margin-right: 30px;
 }
 
-.site-nav .link-contact:hover,
-.site-nav .link-contact:focus {
-  color: #2196f3;
-}
-
 .icon-mail {
   display: block;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.icon-mail:hover, .icon-mail:focus {
+  fill: #2196f3;
 }
 
 .icon-tel {
@@ -188,13 +187,7 @@ img {
   fill: currentColor;
 }
 
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: #2196f3;
-}
-
-.icon-tel:hover,
-.icon-tel:focus {
+.icon-tel:hover, .icon-tel:focus {
   fill: #2196f3;
 }
 
@@ -223,20 +216,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-logo:hover, .footer-logo:focus {
+  color: #2196f3;
+}
+
 .footer-logo-accent {
   color: #2196f3;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-logo-accent:hover,
-.footer-logo-accent:focus {
+.footer-logo-accent:hover, .footer-logo-accent:focus {
   color: #ffffff;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: #2196f3;
 }
 
 .footer-logo,

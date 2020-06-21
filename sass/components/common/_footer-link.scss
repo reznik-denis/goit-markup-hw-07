@@ -22,12 +22,10 @@
   color: $footer-three-text-color;
   background-color: $footer-bacground-color;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-link .footer-link-contact:hover,
-.footer-link .footer-link-contact:focus {
-  color: $accent-color;
+  transition: color 250ms $time-function;
+  &:hover, &:focus {
+    color: $accent-color;
+  }
 }
 
 .social-links {
@@ -57,12 +55,13 @@
   background-color: $border-footer-solid;
   border-radius: 22px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social > .social-footer-link:hover,
-.footer-social > .social-footer-link:focus {
-  background-color: $accent-color;
+  transition: background-color 250ms $time-functiion;
+  &:hover, &:focus {
+    background-color: $accent-color;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .bacground-footer-social {
@@ -91,6 +90,4 @@
   display: flex;
 }
 
-.footer-social .social-footer-link:not(:last-child) {
-  margin-right: 10px;
-}
+

@@ -1,23 +1,26 @@
 .our-works {
   display: flex;
   flex-wrap: wrap;
-}
+  .item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
 
-.our-works .item {
-  position: relative;
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+    border: 1px solid $border-our-team-color;
 
-  border: 1px solid $border-our-team-color;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-works .item:hover,
-.our-works .item:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 250ms $time-function;
+    &:hover, &:focus {
+      box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .thumb {
@@ -27,14 +30,6 @@
 
 .img-our-team {
   width: 100%;
-}
-
-.our-works .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.our-works .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .sectiion-title {
@@ -77,10 +72,8 @@
   background-color: $accent-color-portfolio;
 
   transform: translateY(+100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-works .item:hover .section-description,
-.our-works .item:focus .section-description {
-  transform: translateY(0);
+  transition: transform 250ms $time-function;
+  .our-works .item:hover &, .our-works .item:focus & {
+    transform: translateY(0);
+  }
 }
